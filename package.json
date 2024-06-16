@@ -1,0 +1,12 @@
+{
+  "name": "blog-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/service/notice.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

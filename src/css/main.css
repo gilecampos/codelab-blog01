@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ :root {
+  --main-color: #E07B67;
+  --dark-10: #121214;
+  --dark-20: #17171A;
+  --dark-30: #202024;
+  --dark-40: #252529;
+  --dark-50: #AFABB6;
+  --dark-60: #FFFFFF;
+ }
+
+ body {
+  background-color: var(--dark-10);
+ }
+
+.container {
+  max-width: 90%;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+@media (width >= 1336px) {
+  .container {
+    max-width: 1216px;
+  }
+}
+
+input:focus {
+  border-color: none;
+  outline: 0;
+}
+
+/* HEADER */
+.header {
+  background-color: var(--dark-20);
+  padding: 45px 0;
+}
+
+.header > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.5rem, 1.2573rem + 1.0356vw, 2.5rem);
+  line-height: 140%;
+
+  color: var(--dark-60);
+}
+
+.header__brand > span {
+  color: var(--main-color);
+}
+
+.header__search {
+  background-color: var(--dark-30);
+  border: 2px solid var(--dark-40);
+  border-radius: 8px;
+
+  padding: 16px 24px;
+
+  display: block;
+  width: 100%;
+
+  font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: var(--dark-60);
+}
+
+.header__search::placeholder {
+  color: var(--dark-50);
+}
+
+/* MAIN CONTENT */
+
+main {
+  padding: 41px 0;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post {
+  background-color: var(--dark-20);
+  padding: 32px 24px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+}
+
+.post.active {
+  border-color: var(--main-color);
+}
+
+.post__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 22px;
+}
+
+.post__date {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.75rem, 0.6893rem + 0.2589vw, 1rem);
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.post__icon {
+  fill: #17171A;
+  stroke: #E07B67;
+  stroke-width: 7;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+.post__icon.active,
+.post__icon:hover {
+  fill: #E07B67;
+}
+
+.post__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post__title {
+  font-size: clamp(1.25rem, 1.1893rem + 0.2589vw, 1.5rem);
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--dark-60);
+  line-height: 140%;
+}
+
+.post__description {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+  color: var(--dark-50);
+  line-height: 140%;
+}
