@@ -15,6 +15,9 @@ Este projeto é uma aplicação web que utiliza a API de notícias do IBGE para 
 - **Busca de Notícias**: Permite ao usuário buscar por notícias através de um campo de busca, utilizando debounce para otimizar as requisições.
 - **Interação com Likes**: Permite ao usuário adicionar e remover "likes" nas notícias exibidas.
 
+### Funcionalidades a desenvolver.
+- **Salvar posts com like**: Salvar posts que receberam like no localstorage, para exibir posteriormente se o usuário retornar a página.
+
 ### Tecnologias Utilizadas
 
 - **HTML**: Estrutura básica da aplicação.
