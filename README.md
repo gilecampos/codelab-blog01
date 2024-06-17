@@ -1,4 +1,4 @@
-## Projeto de Notícias com API do IBGE
+## Projeto Blog com API de Noticias IBGE
 
 ## Desafio Layout de Blog da comunidade CodeLab
 Este projeto é uma aplicação web que utiliza a API de notícias do IBGE para exibir postagens em um layout de blog. O desafio original da comunidade CodeLab era criar o layout básico de um blog com postagens e um campo de busca, porém, decidi estender o projeto para incluir a integração com a API para praticar minhas habilidades.
