@@ -6,6 +6,9 @@ Este projeto é uma aplicação web que utiliza a API de notícias do IBGE para 
 ## Link figma dos desafios 
 [CodeLab](https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=257087-8&t=zEiZdP6EcTY90fsB-0)
 
+## Link para preview
+[Ver projeto](https://gilecampos.github.io/codelab-blog01/)
+
 ### Funcionalidades
 
 - **Listagem de Notícias**: Exibe uma lista de notícias relacionadas à tecnologia obtidas da API do IBGE.
