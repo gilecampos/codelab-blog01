@@ -32,9 +32,9 @@ Este projeto é uma aplicação web que utiliza a API de notícias do IBGE para 
 
 1. **Clone o Repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/seu-usuario/codelab-blog01.git
 
-2. **Abra o arquivo `index.hmtl` em um navegador:**
+2. **Abra o arquivo `index.html` em um navegador:**
   - Não é necessário configurar um servidor, basta abrir o arquivo diretamente em um navegador.
 
 ## Aprendizados
