@@ -1,12 +1,18 @@
 export class Data {
   static newDate(date) {
-    const newDate = new Date(date)
+    const dateToISO = this.convertToISO(date)
+    const newDate = new Date(dateToISO)
     const month = this.getMonth(newDate)
     const day = this.getDay(newDate)
     const year = this.getFullYear(newDate)
     const stringMonth = this.getStringMonth(month)
     const formatDate = `${day} de ${stringMonth}, ${year}`
     return formatDate;
+  }
+
+  static convertToISO(date) {
+    const [day, month, year, time] = date.split(/[\s\/:]+/);
+    return `${year}-${month}-${day}T${time}:00`;
   }
 
   static getStringMonth(month) {
