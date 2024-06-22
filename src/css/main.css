@@ -156,3 +156,44 @@ main .container {
   color: var(--dark-50);
   line-height: 140%;
 }
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 16px;
+
+  margin-top: 16px;
+}
+
+
+.prev__button, .next__button {
+  background-color: transparent;
+  border: 0;
+  color: var(--main-color);
+  font-weight: bold;
+
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.prev__button:hover, .next__button:hover {
+  opacity: .7;
+  transition: all .5s ease;
+}
+
+.pagination-controls div {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 1px solid var(--main-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__current {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--main-color);
+}
