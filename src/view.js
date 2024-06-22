@@ -22,7 +22,7 @@ export class View {
     const title = Element.create("h2", "post__title", element.titulo);
     const description = Element.create("p", "post__description", element.introducao);
 
-    const date = Element.create("span", "post__date", element.data_publicacao);
+    const date = Element.create("span", "post__date", Data.newDate(element.data_publicacao));
 
     containerInfo.append(date);
     containerInfo.append(await iconHeart());
