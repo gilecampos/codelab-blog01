@@ -1,20 +1,13 @@
 import { Data } from "./date.js";
 import { Element } from "./element.js";
+import { iconHeart } from "./iconHeart.js";
 import { Like } from "./like.js";
 import { Sanitize } from "./sanitize.js";
 import { Notice } from "./service/notice.js";
 
-
 const BASE_URL = 'https://servicodados.ibge.gov.br/api/v3/noticias/?busca=tecnologia'
 const listPost = document.querySelector('[data-js="list-post"]')
 const inputSearch = document.querySelector('[data-js="input-search"]')
-
-const iconHeart = async () => {
-  const response = await fetch('./src/iconHeart.svg')
-  const data = await response.text()
-  const parser = new DOMParser()
-  return parser.parseFromString(data, "image/svg+xml").documentElement;
-}
 
 const createPosts = async (arrItems) => {
   listPost.innerHTML = ""
