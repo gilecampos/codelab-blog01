@@ -9,6 +9,8 @@ Este projeto é uma aplicação web que utiliza a API de notícias do IBGE para 
 ## Link para preview
 [Ver projeto](https://gilecampos.github.io/codelab-blog01/)
 
+![Novo Projeto (2)](https://github.com/gilecampos/codelab-blog01/assets/102332042/d9fcbac6-2d90-47bc-a6a5-99f2cba12016)
+
 ### Funcionalidades
 
 - **Listagem de Notícias**: Exibe uma lista de notícias relacionadas à tecnologia obtidas da API do IBGE.
