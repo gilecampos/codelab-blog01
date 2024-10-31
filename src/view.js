@@ -15,8 +15,8 @@ export class View {
   }
 
   static async createPost(element) {
-    const container = Element.create("div", "post");
-    const containerInfo = Element.create("div", "post__info");
+    const container = Element.create("article", "post");
+    const containerInfo = Element.create("header", "post__info");
     const containerContent = Element.create("div", "post__content");
 
     const title = Element.create("h2", "post__title", element.titulo);
